@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    app:startDestination="@+id/navigation_info">
+
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="com.example.mobitechtask.main.fragments.InfoFragment"
+        android:label="info"
+        tools:layout="@layout/fragment_info" />
+
+    <fragment
+        android:id="@+id/navigation_light"
+        android:name="com.example.mobitechtask.main.fragments.sensors.lightFragment"
+        android:label="light"
+        tools:layout="@layout/fragment_light" />
+
+    <fragment
+        android:id="@+id/navigation_accelerometer"
+        android:name="com.example.mobitechtask.main.fragments.sensors.shakeFragment"
+        android:label="accelerometer"
+        tools:layout="@layout/fragment_shake" />
+
+    <fragment
+        android:id="@+id/navigation_distance"
+        android:name="com.example.mobitechtask.main.fragments.sensors.distanceFragment"
+        android:label="distance"
+        tools:layout="@layout/fragment_distance" />
+
+    <fragment
+        android:id="@+id/navigation_scanner"
+        android:name="com.example.mobitechtask.main.fragments.sensors.scanFragment"
+        android:label="Scan"
+        tools:layout="@layout/fragment_scan" />
+
+
+</navigation>
